@@ -1,0 +1,32 @@
+1. Is javascript multi threaded \or single threaded ?, and if javascript is single threaded, then how
+node js is able to handle parllel concurrently request in single time ?
+
+2. what is difference bettween in brower/ javascript/ nodejs event loop ?
+
+3. what work flow javascript follow to complete his task FIFO Or LIFO ?
+
+4. what is process.nextTick and how it works ?
+
+5. How shalow copy and deep copy works, and what is the method of both ?
+
+let arr1 = [1,2,4,5];
+let arr2 = [...arr1];
+
+now we need to tell arr2 is shalow copy or deep copy ? 
+
+6. if we try to replace an index with value instead of replace the is added on that specific address
+and other element will move on next address, why its happend ?
+
+7. they given an statement 
+
+console.log('hello')
+process.nextTick(()=>{ console.log('hello 2')});
+setTimeOut(()=>{ console.log('hello 3)}, 0);
+setImidiate(()=>{ console.log('hello world')});
+
+why sequence is changed of print messages ? 
+
+8. suppose you have to peroform any async operation from an array which loop you fill use ?
+
+9. 
+

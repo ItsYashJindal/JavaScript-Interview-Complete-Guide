@@ -1,0 +1,32 @@
+What is javascript ? 
+- 
+
+what is the difference bettween var/ let/ const ? 
+- 
+
+what is event loop ? 
+-
+
+what is asynchronous/ synchronous ? 
+-
+
+what is async await ? 
+- 
+
+what is promises ?
+- 
+
+what is map/ reduce/ filter ? 
+- 
+
+what is hoisting ? 
+- 
+
+what is callback function ?
+- 
+
+what is the difference bettween promise.all and promise.allSettled ? 
+- 
+
+what is buffer and streams ?
+-
