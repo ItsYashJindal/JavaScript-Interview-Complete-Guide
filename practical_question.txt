@@ -1,9 +1,13 @@
 1. Give me the example of clousers ? 
+👉
 
 2. give me the total number of every character repeatation form string ? 
+👉
 
 3. give me the unique number from array. 
+👉
 
 4. asking different shape of patterns to draw [Square, diamond, Square frame, triangle, ..etc];
+👉
 
 5. 

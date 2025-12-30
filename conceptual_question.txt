@@ -28,5 +28,27 @@ why sequence is changed of print messages ?
 
 8. suppose you have to peroform any async operation from an array which loop you fill use ?
 
-9. 
+9. Which runs first: Promise or setTimeout?
+👉 Promise runs first because it goes to the Microtask Queue, which has higher priority than the Callback Queue.
+
+10. Is the Event Loop multi-threading?
+👉 No. JavaScript is single-threaded. The Event Loop only manages asynchronous tasks.
+
+11. async/await belongs to which queue?
+👉 Microtask Queue, because async/await is based on Promises.
+
+12. Why does Microtask Queue have higher priority?
+👉 To complete Promise-related tasks first and keep data consistent.
+
+13. When does the Event Loop run?
+👉 When the Call Stack becomes empty.
+
+14. Why is Call Stack important?
+👉 It executes synchronous JavaScript code line by line.
+
+15. Which queue do DOM events go to?
+👉 Callback (Macrotask) Queue.
+
+16. Does setTimeout(0) execute immediately?
+👉 No. It runs only after the Call Stack is empty and microtasks are completed.
 
