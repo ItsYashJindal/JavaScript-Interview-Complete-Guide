@@ -1,34 +1,58 @@
+[ Note* : this is just for learning, you can change the length of answer as per experience level ]
+
+------------------------------------------------------------------------------------------------------------
 What is javascript ? 
+
 👉 Javascript is an programming language which is runs on browser by through html. on client side user can intract with website by javascript.JavaScript can also run on the server using Node.js.
 
+------------------------------------------------------------------------------------------------------------
 what is the difference bettween var/ let/ const ? 
+
 👉 these are the variables where we can store values. in var which is provides flexiblity to reassign or redeclare the variables, in let we can re assign the values but we could not re declare variable, in constant we could not reassign the value and redeclare the variable.
 
+------------------------------------------------------------------------------------------------------------
 what is asynchronous/ synchronous ? 
+
 👉 In synchronous execution, JavaScript runs code line by line, and each operation must finish before the next one starts. If one task takes time, it blocks the main thread, and the remaining code has to wait until that task is completed. This means the program cannot move forward until the current operation finishes.
 
 In asynchronous execution, JavaScript does not block the main thread for time-consuming tasks. When an asynchronous operation like a timer, API call, or Promise is triggered, JavaScript moves it to the background using Web APIs and continues executing the remaining code. Once the asynchronous task is completed, its result is handled later by the Event Loop.
 
-what is event loop ? [* *]
+------------------------------------------------------------------------------------------------------------
+what is event loop ? 
+
 👉 java script is single threaded but event loop allow us to handle async operation. event loop continuously checks, Is the call stack empty or not ,If yes, move pending tasks to the call stack. first of step all Synchronous code runs in the Call Stack, If the code is asynchronous, like setTimeout, Promise, or an API call, it is sent to Web APIs. Web APIs handle the task in the background. After the task is completed, it does not go back directly to the Call Stack. Instead, Promise👉related tasks are sent to the Microtask Queue, and setTimeout or DOM events are sent to the Callback (Macrotask) Queue. The Event Loop keeps checking if the Call Stack is empty. When it is empty, the Event Loop first moves all tasks from the Microtask Queue to the Call Stack and executes them. Only after that, it takes tasks from the Callback Queue and moves them to the Call Stack one by one. This is how JavaScript manages asynchronous code even though it runs on a single thread.
 
+------------------------------------------------------------------------------------------------------------
 what is async await ? 
+
 👉 Async/await is used to handle asynchronous operations efficiently in JavaScript. It is used inside functions, where the async keyword is used to create an async function, and an async function always returns a Promise. The await keyword pauses the execution of the async function until the Promise is resolved or rejected.
 
+------------------------------------------------------------------------------------------------------------
 what is promises ?
+
 👉 A Promise in javascript is a way, which show an asynchronous task is completed or not. A Promise has three states: pending, fulfilled, and rejected. The pending state means the operation is still in progress, fulfilled means the operation has completed, and rejected means the operation has failed. 
 
+------------------------------------------------------------------------------------------------------------
 what is map/ reduce/ filter ? 
+
 👉 Map, filter, and reduce are JavaScript array methods used to work with array data in an easy and clean way. The map method is used when we want to perform an operation on every element of an array and return a new array with updated values. The filter method is used when we want only specific elements from an array based on a condition, for example getting all numbers greater than 4 from an array. The reduce method is used when we want to combine all elements of an array into a single value, such as calculating the total, sum, or any final result from the array data.
 
+------------------------------------------------------------------------------------------------------------
 what is hoisting ? 
+
 👉 Hoisting is a JavaScript behavior where variable and function declarations are processed before the code is executed.However, only the declaration is hoisted, not the value. Function declarations are fully hoisted.
 
+------------------------------------------------------------------------------------------------------------
 what is callback function ?
+
 👉 A callback function is a function that is passed as an argument to another function and is executed later, after some work is completed. It is mainly used to handle asynchronous operations in JavaScript, such as API calls. the callback function runs once the task finishes.
 
+------------------------------------------------------------------------------------------------------------
 what is the difference bettween promise.all and promise.allSettled ? 
+
 👉 these two methods give accessability to perform mutilple asynchronous operation at the same time. in promise.all we get the only result. If even one promise gets rejected, Promise.all immediately fails and returns an error, and no further results are returned. but in allSettled we got the status along with output data with same format.
 
+------------------------------------------------------------------------------------------------------------
 what is buffer and streams ?
+
 👉 When a file is received from a server, it usually comes in small pieces called chunks. These chunks are temporarily stored in local memory before they are processed, and this temporary storage is called a buffer. When the server sends data continuously in a sequence of chunks, that continuous flow of data is called a stream.
