@@ -7,20 +7,11 @@ what is clousers ?
 what is worker threads ? 
 👉 
 
-what is asynchronous / synchronous ? 
-👉 
-
 what is currying ? 
 👉 
 
 what is process.nextTick() ? 
 👉 
-
-what is hoisting ? 
-👉 
-
-what is map/ reduce/ filter ?
-👉
 
 what is thread poll ? 
 👉 
@@ -36,7 +27,5 @@ what is shalow copy and deep copy ?
 
 8. How we can prevent callback hell/ blocking event loop ?
 👉 
-
-9. what is buffer and streams ?
 
 
