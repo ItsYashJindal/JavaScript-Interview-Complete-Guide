@@ -1,8 +1,23 @@
 1. Give me the example of clousers ? 
 👉
 
+function home(num){
+    let val = 5;
+    return ()=>{
+        return val += num;
+    }
+}
+
 2. give me the total number of every character repeatation form string ? 
-👉
+👉 
+let arr = string.split('');
+let result = {};
+for(let i=0; i < arr.length; i++){
+    if(result[arr[i]]) result[arr[i]] += 1;
+    else result[arr[i]] = 1
+}
+
+// here is the result variable which have desired output
 
 3. give me the unique number from array. 
 👉

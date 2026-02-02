@@ -1,0 +1,25 @@
+What is server ?
+-   A server is a system that receives requests from clients and responds with data, 
+    services, or resources over a network.
+
+Server have two types :- 
+-   Normal / Tradition server (eg. EC2 )
+-   Serverless server (eg. Lambda)
+
+Difference between Normal server & serverless server ?
+-   Normal server can be real or virtual machine where we can manage everything like.
+    OS,Ports, Process, Memory. Here our server is always in running state.
+-   On other hand, in serverless running on demand in a container, after complete his execution 
+    process again will down or stop.
+
+How client send request to the server ?
+-   A client sends a request to the server by using network protocols where TCP first establishes 
+    a connection, then application-level protocols like HTTP or HTTPS define how the request is 
+    formatted, then tcp will break the request in different packet and send to the server, so the
+    server can understand it and send back a response to client.
+
+what is the role of http, https, tcp, smtp ? <------------------------- [ Still I Have Confusion In SMTP ]
+-   HTTP    : formatted the request, establis connection with server and send request
+-   HTTPS   : this is secure version of http, in this protocal exted encryption on data. [ same work ]
+-   TCP     : this protocol is responsible to break request in different small packets and in serial manner.
+-   SMTP    : this protocol is mainly used to send email.
