@@ -1,0 +1,140 @@
+1.  How node.js handle concurrently multiple request even though its single threaded ? 
+👉  Node.js is using event loop to handle all multiple concurrently request. when node.js received 
+    long operation it will handle asynchronously in background and start handling another request, 
+    once background operation is complete. eventloop picks the response and send to the user.
+
+2.  what is currying ?
+👉  currying is that function which return an function until the function get all his arguments
+
+3.  For in and For of Loop difference ?
+👉  for in loop we are using to iterate on objects, and for of loop method 
+    we are most commanly used to handle array data type, this loop is controlable and 
+    async operation friendly, as well it supports return, break and continue keyword to control 
+    iterations
+
+4.  what is the best way to handle asynchronous task in loop ? 
+👉  for of loop is the best to work with asynchronous task over than other loop becuase 
+    * for in loop is working based on keys so thats why we are not using with arrays
+    * for each loop is not controlable and it not await so thats why we are not consider to 
+      use for async operation.
+    * for of loop we can stop with using keywords like return and break, also its more redable and 
+      asyn operation friendly.
+
+5.  what is the difference between spread and rest operator ? 
+👉  spread operator is used to break an array or object into an single independant element, but on
+    other hand with rest operator is will use to collect all values in a single array. 
+
+6.  what is the method of Deep copy ?
+👉  JSON.parse(JSON.stringify(obj)) |----------- OR -----------| structuredClone(obj)
+
+7.  How Browser event loop is different from node event loop ? 
+👉  In browser event loop is used to handle dom event and ui rendring, async task with the help of
+    bowser api but in term of node js event loop is libuv to handle all multiple asynchronous 
+    operations.
+
+9.  How class constructor works ?
+👉  a class constructor is an special type of function which runs automatically when object created from
+    class. it commanly used to set or instialization the value.
+
+10. what is the difference between json and bson ?
+👉  JSON is format which is used to transfer and store data in key value pair in object, it human 
+    readable. in BSON data will get stored in binary form which is used by mongodb to store data 
+    in more efficiently.
+
+11. How database will process when create index ?
+👉  after create index database will create a different data structure for those key and save 
+    refrence for those values in that particular row , so when next time if any query will run 
+    then database will not scan the whole table, he will going to direct scan of those data.
+
+12. what is buffer clashes ?
+13. what is streams ?
+
+14. what is high order function ? 
+👉  High order functions are that function which takes another function as an argument and return 
+    a value or an another function. like map, reduce, filter are an high order function.
+
+15. what is hoisting and clousers ? 
+👉  Hoisting is the natural behaviour of javascript, where before execution synchronous code every 
+    variable and declaration are move on top of the code. these behavior called an hoisting in javascript
+
+👉  clousers are that function which remeber and can access variable from outer function even execution 
+    finish.
+
+16. what is role of libuv in event loop ? 
+👉  Libuv is responsible to run eventloop, it devide the all async operations in different phases like
+    timer, poll, and check. once those operations are finished it moves on the own queues of each phases
+    and event loop check continuously is call stack empty or not, if its empty then pick the all 
+    operation form phases and put them in call stack for execution.
+
+17. what is event emitter ?
+👉  Event emitter is used to create an custom event based function. these function is called on trigger of 
+    specific event. from another function, there we have some of methods to register events we can use
+    method of emitter.on and for listen/ execution have mehtod of emitter.emit.
+
+18. what is api gateway ? 
+
+19. what is microservices ?
+👉  microservices is architectural approch where we are deviding the whole application in each different
+    services. where every services have own codebase and database , which scales independantly. and every
+    services communicate by using message event or by api.
+
+20. why we should choose mongodb for store data of application over the other database ?
+👉  MongoDB is chosen when an application needs flexible data structure and fast development. It allows u
+    to store data in JSON-like documents without a fixed schema, so changing data structure is easy.
+    MongoDB works well for applications with large and unstructured data, high read/write traffic, and 
+    less complex relationships. For highly relational and transactional systems, relational databases are
+    usually a better choice.
+
+21. what is destructuring ? 
+22. How we will use unit testing of code base ? 
+
+23. what is the difference between hashing and encryption ?
+👉  Encryption is reversible, it used to secure data so if we need data back to the original form
+    then we can convert back into the original form, while hashing is irreversible, we could not 
+    convert back into the original form after encryption, we just can compare the both values where 
+    we are getting the output in form of boolean only.
+
+24. difference between spawn() and fork() ?
+25. How do you handle memory leak ?
+26. what is vloom ? 
+
+27. what is throatling ? 
+👉  Throatling is a technique which makes our api more secure, it used to block those request who is 
+    requresting the api over the limit. throatling will restore the limit after some time. It helps to 
+    protect the server from overload and misuse.
+
+28. what if mongodb primary nord will crash how it will handle ? 
+👉  If the MongoDB primary node crashes, the replica set automatically starts an election.
+    Secondary nodes vote, and the node with the most up-to-date data becomes the new primary.
+    This process happens automatically with minimal downtime.
+
+29. what if multiple users update the same document again and again then how mongodb handle the request.
+👉  
+
+30. How Database replication will work ?
+👉
+
+31. what is the difference between soap and rest apis ?
+👉  SOAP is a protocol with strict standards and uses XML only, 
+    SOAP has built-in security and transaction support. it commanly used for build banking and 
+    enterprise level application.
+
+👉  While REST is lightweight and we can use JSON, XML, or other formats, 
+    and REST is simpler, faster, and commonly used for web and mobile APIs.
+
+32. what is the difference between serverless server and normal server ? 
+33. what is lambda ?
+34. How api cancellation works ? 
+35. what is the role of process object in child process management ?
+36. what is trigger in mysql ? 
+37. what is the difference from socket.io/ socket/ websocket ? 
+38. How database will doing fast filtering after create index ? 
+39. How many types of indexing is there ?
+40. what work flow javascript follow to complete his task FIFO Or LIFO ?
+41. what is worker threads ? 
+42. what is process.nextTick() ? 
+43. what is thread poll ?  
+44. what is shalow copy and deep copy ?
+45. What is the use of cluster ?
+46.  what is decorator and instructor in nestjs ?
+47.  what is graphql ?

@@ -3,21 +3,12 @@ node js is able to handle parllel concurrently request in single time ?
 
 2. what is difference bettween in brower/ javascript/ nodejs event loop ?
 
-3. what work flow javascript follow to complete his task FIFO Or LIFO ?
-
-4. what is process.nextTick and how it works ?
-
-5. How shalow copy and deep copy works, and what is the method of both ?
-
 let arr1 = [1,2,4,5];
 let arr2 = [...arr1];
 
 now we need to tell arr2 is shalow copy or deep copy ? 
 
-6. if we try to replace an index with value instead of replace the is added on that specific address
-and other element will move on next address, why its happend ?
-
-7. they given an statement 
+3. they given an statement 
 
 console.log('hello')
 process.nextTick(()=>{ console.log('hello 2')});
@@ -26,29 +17,29 @@ setImidiate(()=>{ console.log('hello world')});
 
 why sequence is changed of print messages ? 
 
-8. suppose you have to peroform any async operation from an array which loop you fill use ?
+4. suppose you have to peroform any async operation from an array which loop you fill use ?
 
-9. Which runs first: Promise or setTimeout?
+5. Which runs first: Promise or setTimeout?
 👉 Promise runs first because it goes to the Microtask Queue, which has higher priority than the Callback Queue.
 
-10. Is the Event Loop multi-threading?
+6. Is the Event Loop multi-threading?
 👉 No. JavaScript is single-threaded. The Event Loop only manages asynchronous tasks.
 
-11. async/await belongs to which queue?
+7. async/await belongs to which queue?
 👉 Microtask Queue, because async/await is based on Promises.
 
-12. Why does Microtask Queue have higher priority?
+8. Why does Microtask Queue have higher priority?
 👉 To complete Promise-related tasks first and keep data consistent.
 
-13. When does the Event Loop run?
+9. When does the Event Loop run?
 👉 When the Call Stack becomes empty.
 
-14. Why is Call Stack important?
+10. Why is Call Stack important?
 👉 It executes synchronous JavaScript code line by line.
 
-15. Which queue do DOM events go to?
+11. Which queue do DOM events go to?
 👉 Callback (Macrotask) Queue.
 
-16. Does setTimeout(0) execute immediately?
+12. Does setTimeout(0) execute immediately?
 👉 No. It runs only after the Call Stack is empty and microtasks are completed.
 

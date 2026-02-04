@@ -1,9 +1,15 @@
 Introduce your self ?
+->  Hey, name is yash jindal, 
+    i am currently working as a backend developer with appsinvo pvt ltd, i have over more than 3 years 
+    of experience, i mainly worked on nodejs , mongodb, express.js, aws, 
+    i have successfully delivered several of different application like ecommerce, job portal, crm tool, 
+    booking appointment, and many more, and if i am talking about my qualification so i have recently 
+    completed my mca from aligargh.and right now i am just looking for an better opportunity where i am
+    getting learn more new things.
 
-Hey, name is yash jindal, 
-i am currently working as a backend developer with appsinvo pvt ltd, i have over more than 3 years 
-of experience, i mainly worked on nodejs , mongodb, express.js, aws, 
-i have successfully delivered several of different application like ecommerce, job portal, crm tool, 
-booking appointment, and many more, and if i am talking about my qualification so i have recently 
-completed my mca from aligargh.and right now i am just looking for an better opportunity where i am
-getting learn more new things.
+Could you tell me your achievements ? 
+->  
+
+What's you are do in day to day routine ? 
+-> 
+

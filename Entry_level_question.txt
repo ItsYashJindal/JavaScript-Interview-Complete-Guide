@@ -1,10 +1,14 @@
 [ Note* : this is just for learning, you can change the length of answer as per experience level ]
 
 ------------------------------------------------------------------------------------------------------------
-What is javascript ? 
+What is javascript and how it is differ from others ? 
 
 👉 Javascript is an programming language which is runs on browser by through html. on client side user can
 intract with website by javascript.JavaScript can also run on the server using Node.js.
+
+------------------------------------------------------------------------------------------------------------
+How we can prevent callback hell/ blocking event loop ?
+👉
 
 ------------------------------------------------------------------------------------------------------------
 what is the difference bettween var/ let/ const ? 

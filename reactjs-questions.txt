@@ -1,0 +1,3 @@
+01. What is the core difference between reactjs and nextjs.
+02. How server side rendering works in next.js ? 
+03. what is the difference between server side rendering and client side rendering ?
