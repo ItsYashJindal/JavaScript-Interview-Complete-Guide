@@ -1,0 +1,85 @@
+-> Begineer Level Questions 
+---------------------------------------------------------------------------------------------------
+
+1.  What is react.js ? 
+->  React is an open source javascript library for building user interface or ui components developed by
+    meta. 
+
+2.  What is JSX ? 
+->  JSX stands for JavaScript XML. It is a syntax used in React that looks similar to HTML but is actually 
+    written inside JavaScript. With JSX, we can write UI code in a more readable way. It allows us to mix 
+    HTML-like structure with JavaScript logic in the same file.
+
+    JSX is a syntax that makes it easier to write and understand React components by combining HTML 
+    structure and JavaScript logic together.
+
+3.  What is virtual DOM ? 
+->  When state or props change in a React component, React does not directly update the browser DOM because
+    real DOM operations are slow. Instead, React first creates a new virtual DOM and compares it with the 
+    previous virtual DOM. This comparison process helps React find out exactly what has changed.
+
+4.  what is the use of Key in react ? 
+->  Keys are used to uniquely idetify and differentiate between components in react. they help react identify
+    which items have changed, added, or removed. This makes the update process faster and more efficient.
+
+5.  What are state and props in react ? 
+->  State and props are both used to manage data in React components, but they have different role.
+    Props are data that a parent component passes to a child component. They are read-only, the meaning is 
+    child component cannot change them. Props are used when we want to send some data from one component to
+    another, like passing a user name or id for display.
+
+    State is data that belongs to the component itself. It can change over time based on user actions or API
+    responses. When state changes, the component re-renders automatically to show updated data.
+
+    In simple terms, props are external data given to a component, and state is internal data managed by the 
+    component itself.
+
+6.  What is lifting state up ?
+->  Lifting state up means moving the shared state to the closest common parent component so that multiple
+    child components can use and update the same data.
+
+    Sometimes two or more child components need to show or modify the same data. If each child keeps its own
+    state, the data can become inconsistent. To solve this, we move the state to their parent component and 
+    pass the data down using props. The parent also passes functions so children can update that shared 
+    state.
+
+7.  What is the controlled and uncontrolled component in react.js ?
+->  Controlled and uncontrolled components are related to how form data is handled in React.
+
+    A controlled component is one where the form input value is controlled by React state. The value of the 
+    input comes from state, and every change in the input updates that state using an onChange handler. So 
+    React has full control over the data and the UI always reflects the state.
+
+    In an uncontrolled component, the form input manages its own state inside the DOM. React does not 
+    control the value directly. We usually use a ref to read the value when needed, for example on form 
+    submit.
+
+8.  Please explain of all those hooks :- 
+    * useRef 
+    * useContext 
+    * useEffect 
+    * useState 
+    * useReducer 
+    * useMemo 
+    * useCallback
+
+->  useState is used to store and update data inside a component. When the state changes, the component     
+    re-renders and shows the updated value. It is mostly used for simple values like counters, form inputs, 
+    or flags.
+
+->  useEffect is used to perform side effects in a component. Side effects mean things like calling an API, 
+    setting a timer, or updating something outside the component. It runs after the component renders and 
+    can also run again when its dependencies change.
+
+->  UseRef .... ?
+->  useContext is used to share data across multiple components without passing props at every level. For 
+    example, user authentication data or theme settings can be stored in a context and accessed by any 
+    component that needs it.
+
+->  useReducer ...?
+->  useMemo is used to optimize performance by memoizing a calculated value. If a calculation is expensive, 
+    useMemo ensures it only recalculates when its dependencies change, otherwise it returns the cached 
+    result.
+
+->  useCallback is used to memoize a function so that the same function reference is reused between renders. 
+    This helps prevent unnecessary re-renders of child components that receive that function as a prop.
