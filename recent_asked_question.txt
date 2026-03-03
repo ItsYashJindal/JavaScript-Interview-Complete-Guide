@@ -1,19 +1,19 @@
 1.  How node.js handle concurrently multiple request even though its single threaded ? 
-👉  Node.js is using event loop to handle all multiple concurrently request. when node.js received 
+->  Node.js is using event loop to handle all multiple concurrently request. when node.js received 
     long operation it will handle asynchronously in background and start handling another request, 
     once background operation is complete. eventloop picks the response and send to the user.
 
 2.  what is currying ?
-👉  currying is that function which return an function until the function get all his arguments
+->  currying is that function which return an function until the function get all his arguments
 
 3.  For in and For of Loop difference ?
-👉  for in loop we are using to iterate on objects, and for of loop method 
+->  for in loop we are using to iterate on objects, and for of loop method 
     we are most commanly used to handle array data type, this loop is controlable and 
     async operation friendly, as well it supports return, break and continue keyword to control 
     iterations
 
 4.  what is the best way to handle asynchronous task in loop ? 
-👉  for of loop is the best to work with asynchronous task over than other loop becuase 
+->  for of loop is the best to work with asynchronous task over than other loop becuase 
     * for in loop is working based on keys so thats why we are not using with arrays
     * for each loop is not controlable and it not await so thats why we are not consider to 
       use for async operation.
@@ -21,75 +21,92 @@
       asyn operation friendly.
 
 5.  what is the difference between spread and rest operator ? 
-👉  spread operator is used to break an array or object into an single independant element, but on
+->  spread operator is used to break an array or object into an single independant element, but on
     other hand with rest operator is will use to collect all values in a single array. 
 
 6.  what is the method of Deep copy ?
-👉  JSON.parse(JSON.stringify(obj)) |----------- OR -----------| structuredClone(obj)
+->  JSON.parse(JSON.stringify(obj)) |----------- OR -----------| structuredClone(obj)
 
 7.  How Browser event loop is different from node event loop ? 
-👉  In browser event loop is used to handle dom event and ui rendring, async task with the help of
+->  In browser event loop is used to handle dom event and ui rendring, async task with the help of
     bowser api but in term of node js event loop is libuv to handle all multiple asynchronous 
     operations.
 
 9.  How class constructor works ?
-👉  a class constructor is an special type of function which runs automatically when object created from
+->  a class constructor is an special type of function which runs automatically when object created from
     class. it commanly used to set or instialization the value.
 
 10. what is the difference between json and bson ?
-👉  JSON is format which is used to transfer and store data in key value pair in object, it human 
+->  JSON is format which is used to transfer and store data in key value pair in object, it human 
     readable. in BSON data will get stored in binary form which is used by mongodb to store data 
     in more efficiently.
 
 11. How database will process when create index ?
-👉  after create index database will create a different data structure for those key and save 
+->  after create index database will create a different data structure for those key and save 
     refrence for those values in that particular row , so when next time if any query will run 
     then database will not scan the whole table, he will going to direct scan of those data.
 
-12. what is buffer clashes ?
+12. what is Buffer and Buffer Clashes ?
+
+->  A buffer is a temporary memory area where data is stored for a short time while it is being 
+    transferred from one place to another before it is processed.
+
+->  Buffer Clash is a security problem.In a running program, memory has two parts called stack and heap.
+    The stack grows downward and the heap grows upward. If the stack grows too much and there is not 
+    enough protection between them, it can collide with the heap.This can corrupt memory and may crash 
+    the program or allow an attacker to exploit it.
+
 13. what is streams ?
+->  
 
 14. what is high order function ? 
-👉  High order functions are that function which takes another function as an argument and return 
+->  High order functions are that function which takes another function as an argument and return 
     a value or an another function. like map, reduce, filter are an high order function.
 
 15. what is hoisting and clousers ? 
-👉  Hoisting is the natural behaviour of javascript, where before execution synchronous code every 
+->  Hoisting is the natural behaviour of javascript, where before execution synchronous code every 
     variable and declaration are move on top of the code. these behavior called an hoisting in javascript
 
-👉  clousers are that function which remeber and can access variable from outer function even execution 
+->  clousers are that function which remeber and can access variable from outer function even execution 
     finish.
 
 16. what is role of libuv in event loop ? 
-👉  Libuv is responsible to run eventloop, it devide the all async operations in different phases like
+->  Libuv is responsible to run eventloop, it devide the all async operations in different phases like
     timer, poll, and check. once those operations are finished it moves on the own queues of each phases
     and event loop check continuously is call stack empty or not, if its empty then pick the all 
     operation form phases and put them in call stack for execution.
 
 17. what is event emitter ?
-👉  Event emitter is used to create an custom event based function. these function is called on trigger of 
+->  Event emitter is used to create an custom event based function. these function is called on trigger of 
     specific event. from another function, there we have some of methods to register events we can use
     method of emitter.on and for listen/ execution have mehtod of emitter.emit.
 
 18. what is api gateway ? 
+->  Api gateway is en entry point of an application where every request come first. api gateway is decide 
+    to where it needs to redict the request. and it also responsible to compress response and mange version also
 
 19. what is microservices ?
-👉  microservices is architectural approch where we are deviding the whole application in each different
+->  microservices is architectural approch where we are deviding the whole application in each different
     services. where every services have own codebase and database , which scales independantly. and every
     services communicate by using message event or by api.
 
 20. why we should choose mongodb for store data of application over the other database ?
-👉  MongoDB is chosen when an application needs flexible data structure and fast development. It allows u
+->  MongoDB is chosen when an application needs flexible data structure and fast development. It allows u
     to store data in JSON-like documents without a fixed schema, so changing data structure is easy.
     MongoDB works well for applications with large and unstructured data, high read/write traffic, and 
     less complex relationships. For highly relational and transactional systems, relational databases are
     usually a better choice.
 
 21. what is destructuring ? 
+->  destructuring is javascript feature that allow us to extract values from object and stored values
+    in different variables.
+
 22. How we will use unit testing of code base ? 
+->  By using jest we can easily do testing our code , suppose we have function , example.
+    sum, expect(sum(2,3)).tobe(5);
 
 23. what is the difference between hashing and encryption ?
-👉  Encryption is reversible, it used to secure data so if we need data back to the original form
+->  Encryption is reversible, it used to secure data so if we need data back to the original form
     then we can convert back into the original form, while hashing is irreversible, we could not 
     convert back into the original form after encryption, we just can compare the both values where 
     we are getting the output in form of boolean only.
@@ -99,42 +116,118 @@
 26. what is vloom ? 
 
 27. what is throatling ? 
-👉  Throatling is a technique which makes our api more secure, it used to block those request who is 
-    requresting the api over the limit. throatling will restore the limit after some time. It helps to 
+->  Throatling is a technique which makes our api more secure, it used to block those request who is 
+    requesting the api over the limit. throatling will restore the limit after some time. It helps to 
     protect the server from overload and misuse.
 
 28. what if mongodb primary nord will crash how it will handle ? 
-👉  If the MongoDB primary node crashes, the replica set automatically starts an election.
+->  If the MongoDB primary node crashes, the replica set automatically starts an election.
     Secondary nodes vote, and the node with the most up-to-date data becomes the new primary.
     This process happens automatically with minimal downtime.
 
 29. what if multiple users update the same document again and again then how mongodb handle the request.
-👉  
+->  Only one write operation can modify that document at a time. Other writes wait in a queue. MongoDB
+    ensures atomic operations on a single document, so each update completes fully before the next one 
+    starts.
 
-30. How Database replication will work ?
-👉
+30. How Database replica work ?
+->  in replicaset, mongodb have one primary node and others are Secondary node. all write operation go on 
+    primary and all read operation go on Secondary databases.
 
 31. what is the difference between soap and rest apis ?
-👉  SOAP is a protocol with strict standards and uses XML only, 
+->  SOAP is a protocol with strict standards and uses XML only, 
     SOAP has built-in security and transaction support. it commanly used for build banking and 
     enterprise level application.
 
-👉  While REST is lightweight and we can use JSON, XML, or other formats, 
+->  While REST is lightweight and we can use JSON, XML, or other formats, 
     and REST is simpler, faster, and commonly used for web and mobile APIs.
 
 32. what is the difference between serverless server and normal server ? 
-33. what is lambda ?
-34. How api cancellation works ? 
+->  In noraml server we are responsible to handle setup server and sclable when user traffic got
+    increases or we need to take care about when server goes down, but in case of serverless we
+    do not need to care about that, server is cost effective and sclable, server will scale automatically
+    according to user traffic. and serverless charges only for running time
+
+33. What is callback hell, How we can prevent callback hell/ blocking event loop ?
+->  To prevent callback hell we can use promises and aync await to handle asynchronous operation
+    so nested callback will not going to create. and code will be readable.
+
+->  and for prevent event loop we must need to keep free main thread. we must need to avoid run heavy
+    synchronous task on main thread like heavy loop , file system operation etc.
+
 35. what is the role of process object in child process management ?
-36. what is trigger in mysql ? 
+->  child process is mainly used to handle heavy operation on different process. with the help of fork 
+    method we create event driven methods where parent and child function will communicate with the 
+    help of send method and there we have different method different use cases like 
+    
+    .exit to exit the process 
+    .on to get the message 
+    .pid to get the prcess id
+
 37. what is the difference from socket.io/ socket/ websocket ? 
+->  websocket is an protocol, which is run based on udp. WebSocket is designed for real-time, bidirectional
+    communication like chat or live updates. but socket.io is an library which is run top on websocket protocol
+    which having some additional feature like, connection retry, rooms, event based communication.
+
 38. How database will doing fast filtering after create index ? 
+->  after create the index in database, database will create the structure document to store value 
+    in sorting format. many of database stored in b-tree format and save the address of key directly
+    so after create indexing its not going to scan whole table which makes more faster.
+
 39. How many types of indexing is there ?
 40. what work flow javascript follow to complete his task FIFO Or LIFO ?
+
 41. what is worker threads ? 
+->  A thread pool is a group of fixed number of threads that are used to perform background tasks.
+    When a task is assigned to a thread and it completes, the same thread becomes available to handle another task.
+
 42. what is process.nextTick() ? 
+->  process.nextTick() is a Node.js function that executes a callback immediately after the current operation 
+    completes, but before the event loop continues.
+
 43. what is thread poll ?  
 44. what is shalow copy and deep copy ?
 45. What is the use of cluster ?
-46.  what is decorator and instructor in nestjs ?
-47.  what is graphql ?
+46. what is decorator and instructor in nestjs ?
+47. what is graphql ?
+48. what is piping ?
+49. How do you protect a Node.js application from CSRF attacks?
+50. What testing tools are commonly used in Node.js projects?
+
+51. what is cluster, how worker thread is differet from cluster ? 
+->  Cluster is a Node.js module that allows us to create multiple processes to use multiple CPU cores. Each process
+    runs its own event loop and handles requests independently.
+
+    Here is the Difference btw Cluster and worker thread :-
+    Cluster
+    *) Creates multiple processes
+    *) Each process has separate memory
+    *) Used to handle more incoming requests
+    *) Good for scaling server performance
+
+    Worker Threads
+    *) Creates multiple threads inside same process
+    *) Memory can be shared
+    *) Used for heavy CPU tasks
+    *) Good for calculations
+
+52. what is the difference between threads and child process  ?
+->  Child processes run in separate memory spaces and communicate using messages. Worker threads run in the same
+    process and can share memory, which makes them more efficient for heavy CPU tasks.
+
+53. what is event driven proggraming in node js ? 
+55. what is the diffe between partioning and sharding ? 
+56. Difference between authentication and authoriztion ? 
+57. How do we manage multiple authentication between multiple roles ? 
+58. what are major components in jwt ?
+59. How jwt security can be breached ? 
+60. is access token generate from jwt ? 
+61. how do we manage the large record database ?
+62. How to improve performance of our application ? 
+63. How do background task get handled.
+64. how rabbit mq help in microservices ?
+65. what is gaurds in nest js, and how it help in authoriztion ?
+66. difference between nest js and express js ?
+67. How to manage communication between microservices which is build on differnet frameworks ?
+68. what if we want to upload 5 to 10 gb large file, how it will handle on nest js ?
+69. 

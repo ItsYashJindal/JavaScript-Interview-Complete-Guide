@@ -1,0 +1,20 @@
+Database :- Mongodb 
+--------------------------------------------------------------------------------------
+
+1. what database engine is mongodb use ? 
+2. what is the size of a single document can store in a table in mongodb database ? 
+3. what is the difference between compound index and composite keys in mongodb ? 
+4. what is lambda how it works ?
+5. How lambda is different from other server ? when we should use ?
+
+Database :- MySQL 
+--------------------------------------------------------------------------------------
+
+1. what is trigger in mysql ? 
+2. Difference between truncate and drop ? 
+3. How to handle race condition ? 
+4. what if multiple user updating same document in database how, it will handle ?
+5. is null key can be primary or not ? 
+6. how indexing make more faster then normal query ? 
+7. How to make field take null value as well. 
+8. what is sql injection ? 
